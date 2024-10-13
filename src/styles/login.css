@@ -1,0 +1,78 @@
+:root{
+    --border-color:rgba(0, 0, 0, 0.151);
+}
+.login{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.login .form{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+}
+.login .form.register{
+    max-width: 400px;
+}
+.login .form h3{
+    color: var(--flame);
+    font-size: 20px;
+    padding: .4em 0em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid;
+}
+.login .form .row{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: .5em;
+}
+.login .form .row.enlaces{
+    display: flex;
+    justify-content: space-between;
+    padding: .4em .2em;
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        color: var(--black-olive);
+    }
+}
+.login .form .row i{
+    position: absolute;
+    aspect-ratio: 1;
+    height: 100%;
+    border: 1px solid;
+    left: 0;
+    background: var(--black-olive);
+    color: var(--floral-white);
+    display: grid;
+    place-content: center;
+    font-size: 1.5em;
+}
+.login .form.register .row input{
+    text-align: start;
+}
+.login .form .row input{
+    width: 100%;
+    padding: .5em;
+    text-align: center;
+    outline: none;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
+}
+.login .form .row input[type ='submit']{
+    border: none;
+    cursor: pointer;
+    background: var(--flame);
+    color: var( --floral-white);
+    opacity: .89;
+    text-align: center;
+}
+.login .form .row input[type ='submit']:hover{
+    opacity: 1;
+}

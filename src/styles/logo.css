@@ -1,0 +1,19 @@
+.logotipe{
+    width: 100%;
+    max-width: 150px;
+    padding: .7em 0em;
+    position: relative;
+    margin: .6em 0em;
+    color: var(--floral-white);
+}
+.logotipe h1{
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+}
+.logotipe i{
+    position: absolute;
+    left: calc(50% - .4em);
+    top: -.4em;
+    font-size: 1.2em;
+}

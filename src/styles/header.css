@@ -1,0 +1,96 @@
+
+.header__main{
+    display: flex;
+    align-items: center;
+    padding: 0em 1em;
+    background: var(--eerie-black);
+}
+
+.header__main .hamburguesa{
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--eerie-black);
+    position: fixed;
+    z-index: 10;
+    right: 1em;
+    color: var(--floral-white);
+    display: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.header__main .navbar{
+    width: calc(100% - 150px);
+    background: inherit;
+    transform: translateX(0%);
+}
+.header__main .navbar ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__main .navbar a{
+    text-decoration: none;
+    min-width: 150px;
+    color: var(--floral-white);
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: .3em 1em;
+    margin: 0em .3em;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+}
+.header__main .navbar i{
+    font-size: 15px;
+    margin-right: .4em;
+}
+.header__main .navbar a.active{
+    border-left:2px solid var(--black-olive);
+    border-top:2px solid var(--black-olive);
+    border-right:2px solid var(--flame);
+    border-bottom:2px solid var(--flame);
+}
+
+@media screen and (max-width:1024px) {
+    .header__main .navbar{
+        position: fixed;
+        z-index: 8;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: all .2s ease-in-out;
+    }
+    .header__main .navbar.visible{
+        transform: translateX(0%);
+    }
+    .header__main .hamburguesa{display: block;}
+    .header__main .navbar ul{
+        width: 80%;
+        height: 80%;
+        border: 1px solid var(--floral-white);
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 1em;
+        border-radius: .4em;
+    }
+    .header__main .navbar li{
+        width: 100%;
+        margin-bottom: .4em;
+    }
+    .header__main .navbar a{
+        width: 100%;
+        text-align: start;
+    }
+}
