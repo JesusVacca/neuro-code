@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/neuro-code/static/css/main.270a9e55.css",
+    "main.js": "/neuro-code/static/js/main.023b75ed.js",
+    "static/media/bootstrap-icons.woff?": "/neuro-code/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/neuro-code/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/neuro-code/index.html",
+    "main.270a9e55.css.map": "/neuro-code/static/css/main.270a9e55.css.map",
+    "main.023b75ed.js.map": "/neuro-code/static/js/main.023b75ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.270a9e55.css",
+    "static/js/main.023b75ed.js"
+  ]
+}
