@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/login.css'
+import UserDto from '../models/userDto';
+
 
 const Login =(props)=>{
     const [nextForm, setNextForm] = useState(true);
+    const [isLogged, setIsLogged] = useState(false);
+    const [user,setUser] = useState(new UserDto(0,"","","","",{}));
     return(
         <section className='login'>
             {

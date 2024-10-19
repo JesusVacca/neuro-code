@@ -14,7 +14,7 @@
     width: 100%;
     height: auto;
     padding: 1em;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(0, 0, 0, 0.151);
 }
 .login .form.register{
     max-width: 400px;
@@ -62,7 +62,7 @@
     padding: .5em;
     text-align: center;
     outline: none;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(0, 0, 0, 0.151);
     font-size: 16px;
 }
 .login .form .row input[type ='submit']{

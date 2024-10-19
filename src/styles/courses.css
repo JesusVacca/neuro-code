@@ -1,0 +1,123 @@
+.courses__secction{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,minmax(min(280px,100%),300px)
+    );
+    gap: .7em;
+    place-content: center;
+    scrollbar-width: thin;
+    padding: .5em 0em;
+}
+
+.courses__secction .items__course{
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--floral-white);
+    border-radius: .3em;
+}
+
+.items__course img{
+    width: 100%;
+    height: 200px;
+    border-radius: inherit;
+    object-fit: fill;
+}
+.items__course button{
+    display: block;
+    width: 90%;
+    padding: .5em 0em;
+    cursor: pointer;
+    border: none;
+    margin: 1.5em 0em;
+    font-size: 14px;
+    color: var(--floral-white);
+    background: var(--flame);
+    border-radius: inherit;
+}
+.items__course .description{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.221);
+}
+.items__course h3,
+.items__course p{
+    width: 100%;
+    height: auto;
+    padding: .2em .6em;
+    color: var(--black-olive);
+    font-size: 20px;
+    text-align: start;
+}
+.items__course h3{color: var(--eerie-black);}
+.items__course p{font-size: 16px;}
+.items__course i,
+.items__course strong{
+    margin-right: .3em;
+}
+.items__course i{
+    font-size: 20px;
+}
+
+.box__modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(400px,100%),450px));
+    place-content: center;
+    background: rgba(0, 0, 0, 0.221);
+    z-index: 20;
+    left: 0;
+    top:0;
+    padding: .5em;
+}
+.box__content{
+    height: auto;
+    background: var(--floral-white);
+    padding: .5em;
+    border-radius: .3em;
+}
+.box__content h2{
+    width: 100%;
+    text-align: center;
+    padding: .3em 0em;
+    color: var(--flame);
+    font-size: 25px;
+}
+.box__content h3,
+.box__content p{
+    width: 100%;
+    height: auto;
+    padding: .2em;
+    color: var(--black-olive);
+    font-size: 20px;
+    text-align: start;
+}
+.box__content p{
+    font-size: 14px;
+}
+.box__content .buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    margin: 1em 0em;
+    border-radius: inherit;
+}
+.box__content .buttons button{
+    cursor: pointer;
+    padding: .5em 1em;
+    border: none;
+    background: var(--flame);
+    color: var(--floral-white);
+    text-align: center;
+    border-radius: inherit;
+    font-size: 16px;
+}
+.box__content .buttons button.cancel{
+    background: var(--eerie-black);
+}

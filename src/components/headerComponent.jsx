@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import LogoComponent from './logoComponent';
 import Login from '../pages/login';
+import FooterComponent from './footerComponent';
 
 
 const HeaderComponent =(props)=>{
@@ -100,6 +101,7 @@ const HeaderComponent =(props)=>{
                     })
                 }
             </Routes>
+            <FooterComponent/>
         </BrowserRouter>
     )
 }
